@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mini</title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href = "./media.css">
+        <input type = "number" id = "firstNumber" placeholder = "enter 1st number">
+        <input type = "number" id = "secondNumber" placeholder = "enter 2nd number"><br>
+        <button onclick = "add()">Add</button>
+        <button onclick = "sub()">Subtraction</button>
+        <button onclick = "mul()">Multiply</button>
+        <button onclick = "div()">Divide</button>
+        <h2 id = "answer">output</h2>
+    </body>
+</html>
+<script>
+    function add(){
+let firstNumber = parseFloat(document.getElementById("firstNumber").value);
+let secondNumber = parseFloat(document.getElementById("secondNumber").value);
+let result = firstNumber + secondNumber;
+console.log(document.getElementById("answer").innerText = result);
+    }
+    function sub(){
+let firstNumber = parseFloat(document.getElementById("firstNumber").value);
+let secondNumber = parseFloat(document.getElementById("secondNumber").value);
+let result = firstNumber - secondNumber;
+console.log(document.getElementById("answer").innerText = result);
+    }
+    function mul(){
+let firstNumber = parseFloat(document.getElementById("firstNumber").value);
+let secondNumber = parseFloat(document.getElementById("secondNumber").value);
+let result = firstNumber * secondNumber;
+console.log(document.getElementById("answer").innerText = result);
+    }
+    function div(){
+let firstNumber = parseFloat(document.getElementById("firstNumber").value);
+let secondNumber = parseFloat(document.getElementById("secondNumber").value);
+let result = firstNumber / secondNumber;
+console.log(document.getElementById("answer").innerText = result);
+    }
+
+</script>
